@@ -1,0 +1,54 @@
+.form-control::placeholder{
+    color: black !important;
+    font-style: oblique;
+    opacity: .4;
+}
+
+.card{
+    /* box-shadow: 0 .46875rem 2.1875rem #fbdd11,0 .9375rem 1.40625rem #fbdd11,0 .25rem .53125rem #fbdd11,0 .125rem .1875rem #fbdd11;*/ 
+    box-shadow: 0 .46875rem 2.1875rem black,0 .9375rem 1.40625rem black,0 .25rem .53125rem black,0 .125rem .1875rem black;   
+}
+
+.breadcrumb-item.active{
+    color: #fbdd11;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7{
+    color: #fbdd11;
+    border: thin solid #fbdd11;
+    border-radius: .375rem;
+    padding: .2rem .3rem;
+    margin-top: .26rem;
+    
+}
+
+.ReactFlagsSelect-module_selectOptions__3LNBJ{
+    background-color: rgb(33, 37, 41);
+    max-height: 10.5rem;
+    margin-top: 0;
+    border-color: #fbdd11;
+}
+
+.ReactFlagsSelect-module_selectOptionValue__vS99-{
+    background-color: rgb(33, 37, 41);
+    color: #fbdd11;
+}
+
+.ReactFlagsSelect-module_selectOption__3pcgW:hover, .ReactFlagsSelect-module_selectOption__3pcgW:focus{
+    background: rgb(33, 37, 41);
+}
+
+.ReactFlagsSelect-module_filterBox__3m8EU{
+    background-color: rgb(33, 37, 41);
+}
+
+.ReactFlagsSelect-module_filterBox__3m8EU input{
+    background-color: rgb(33, 37, 41);
+    color: #fbdd11;
+    border-color: #fbdd11;
+    border-radius: .375rem;
+}
+
+.ReactFlagsSelect-module_selectValue__152eS{
+    max-width: 90%;
+}
