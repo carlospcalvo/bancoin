@@ -1,0 +1,11 @@
+p, span, a{
+    font-family: 'Overpass Mono', monospace;
+}
+
+h1, h2, h3, h4, button {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.navbar-expand-md .navbar-collapse{
+    justify-content: flex-end !important;
+}

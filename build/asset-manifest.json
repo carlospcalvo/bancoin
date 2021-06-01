@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ec05a16.chunk.css",
+    "main.js": "/static/js/main.24b389ab.chunk.js",
+    "main.js.map": "/static/js/main.24b389ab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ebce27fd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ebce27fd.js.map",
+    "static/css/2.8c642df8.chunk.css": "/static/css/2.8c642df8.chunk.css",
+    "static/js/2.aa2aacf1.chunk.js": "/static/js/2.aa2aacf1.chunk.js",
+    "static/js/2.aa2aacf1.chunk.js.map": "/static/js/2.aa2aacf1.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.8c642df8.chunk.css.map": "/static/css/2.8c642df8.chunk.css.map",
+    "static/css/main.4ec05a16.chunk.css.map": "/static/css/main.4ec05a16.chunk.css.map",
+    "static/js/2.aa2aacf1.chunk.js.LICENSE.txt": "/static/js/2.aa2aacf1.chunk.js.LICENSE.txt",
+    "static/media/Coin-transparent.0a3c3623.gif": "/static/media/Coin-transparent.0a3c3623.gif",
+    "static/media/banano-icon.e36cbded.svg": "/static/media/banano-icon.e36cbded.svg",
+    "static/media/btc.eecdd087.svg": "/static/media/btc.eecdd087.svg",
+    "static/media/coin_back.97115adf.png": "/static/media/coin_back.97115adf.png",
+    "static/media/coin_front.3e02104e.png": "/static/media/coin_front.3e02104e.png",
+    "static/media/eth.9270fc02.svg": "/static/media/eth.9270fc02.svg",
+    "static/media/usdt.004b5e55.svg": "/static/media/usdt.004b5e55.svg",
+    "static/media/wip.e8c2c3ca.png": "/static/media/wip.e8c2c3ca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ebce27fd.js",
+    "static/css/2.8c642df8.chunk.css",
+    "static/js/2.aa2aacf1.chunk.js",
+    "static/css/main.4ec05a16.chunk.css",
+    "static/js/main.24b389ab.chunk.js"
+  ]
+}

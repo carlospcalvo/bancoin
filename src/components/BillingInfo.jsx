@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import { Card, Button, Container, Row, Col, FormInput, Breadcrumb, BreadcrumbItem } from "shards-react"
@@ -10,18 +9,16 @@ import '../styles/BillingInfo.css'
 export const BillingInfo = () => {
     const styles = {
         main: {
-            //height: '42.8rem',
             minHeight: 'calc(100vh - 9rem)',
-            backgroundColor: '#212529',
+            backgroundColor: '#2A2A2E',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-evenly',
             alignItems: 'center'
         },
         card: {
-            // width: '40rem', 
-            backgroundColor: '#212529',
-            borderColor: '#212529',
+            backgroundColor: '#2A2A2E',
+            borderColor: '#2A2A2E',
             borderRadius: '22px',
             margin: '1rem',
             marginTop: '0',
@@ -29,11 +26,15 @@ export const BillingInfo = () => {
         breadCrumb: {
             marginTop: '1rem',
         },
+        breadCrumbText: {
+            color: '#6c757d',
+            textDecoration: 'none'
+        },
         form: {
             width: 'auto',
             padding: '1rem',
             borderRadius: '21px',
-            backgroundColor: '#212529',
+            backgroundColor: '#2A2A2E',
             borderColor: '#fbdd11',
         },
         input: {
@@ -41,7 +42,7 @@ export const BillingInfo = () => {
             //backgroundColor: '#dac220',
             backgroundColor: '#ecd11f',
             
-            borderColor: '#212529',
+            borderColor: '#2A2A2E',
             //color: '#fbdd11',
             color: 'black',
             marginTop: '.25rem',
@@ -66,6 +67,8 @@ export const BillingInfo = () => {
         },
     }
 
+    const history = useHistory()
+
     const initialValues = {
         firstName: "",
         lastName: "",
@@ -82,7 +85,9 @@ export const BillingInfo = () => {
         <div style={styles.main}>
             <Breadcrumb style={styles.breadCrumb}>
                 <BreadcrumbItem>
-                    Cart 
+                    <Link to='/cart' style={styles.breadCrumbText}>
+                        Cart
+                    </Link>
                 </BreadcrumbItem>
                 <BreadcrumbItem active>Billing Info</BreadcrumbItem>
                 <BreadcrumbItem>
@@ -257,55 +262,16 @@ export const BillingInfo = () => {
                                         </Col>
                                     </Row>
                                 </Container>
-                                {console.log(errors)}
-                                {/* 
-                                <Grid container spacing={3}>
-                                    <Grid item xs={12}>
-                                        <ItemSelect errors={errors.ExpenseType} touched={touched.ExpenseType} />
-                                    </Grid>
-                                    <Grid item xs={12} sm={6}>
-                                        <Field name="UnitPrice" type="text" label="Monto neto" variant="outlined" style={{width:"100%"}} component={TextField} />
-                                    </Grid>
-                                    <Grid item xs={12} sm={6}>
-                                        <VATSelect errors={errors.TaxCode} touched={touched.TaxCode}/>
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <Field name="hasWT" type="checkbox" Label={{label: "Tiene percepciones", labelPlacement: "start"}} 
-                                        onChange={() => handleWTChange(values)} indeterminate={false} checked={hasWT} component={CheckboxWithLabel} />
-                                        {   
-                                            hasWT && (
-                                                <div className={classes.wtButtons}> 
-                                                    <Button variant="outlined" color="secondary" className={classes.wtButton} onClick={() => handleAddWTax(values)}> 
-                                                        Agregar percepción
-                                                    </Button>
-                                                    <Button variant="outlined" color="secondary" className={classes.wtButton} onClick={() => handleRemoveWTax(values)}>
-                                                        Quitar percepción
-                                                    </Button>
-                                                </div>
-                                            )
-                                        }
-                                    </Grid>
-                                    {
-                                        WTQty.length > 0 && (
-                                            WTQty.map((tax, i) => <TaxDetail 
-                                                index={i} 
-                                                key={i} 
-                                                errors={errors?.WithholdingTaxDataWTXCollection?.length > 0 ? errors.WithholdingTaxDataWTXCollection[i] : false} 
-                                                touched={touched?.WithholdingTaxDataWTXCollection?.length > 0 ? touched.WithholdingTaxDataWTXCollection[i] : false}
-                                            />)
-                                        )
-                                    }
-                                    
-                                </Grid> */}
                             </Form>
                             <div className="d-flex justify-content-center">
-                                <Button  pill theme="success" style={styles.button}
+                                <Button pill theme="success" style={styles.button}
                                 onClick={
                                     () => validateForm()
                                     .then((errors) => {
                                         console.log('values', values)
                                         if(Object.entries(errors).length === 0 && errors.constructor === Object ) {
                                             console.log("[BillInfo] valid values", values)
+                                            history.push('/payment')
                                         } else {
                                             console.log("[BillInfo] errors", errors)
                                             setTouched(errors);

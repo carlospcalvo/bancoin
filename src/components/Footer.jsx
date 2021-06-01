@@ -1,5 +1,6 @@
 import { faTwitter, faReddit, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Ar } from 'react-flags-select'
 
 export const Footer = () => {
     const styles = {
@@ -47,9 +48,12 @@ export const Footer = () => {
             <div>
                 <div className='container text-center'>
                     <p style={styles.copy}>
-                        &copy; {new Date().getFullYear()}  Mariano Montiel &{' '} 
-                        <a href="https://github.com/carlospcalvo" rel='nofollow' style={styles.links}>Carlos Calvo Nazábal</a>
+                        <Ar style={{marginBottom: '.225rem'}}/> {' '} 
+                        &copy; {' '} 
+                        {new Date().getFullYear()}  Mariano Montiel &{' '} 
+                        <a href="https://github.com/carlospcalvo" rel='nofollow' style={styles.links}>Carlos Calvo Nazábal </a>
                     </p>
+                   
                 </div>
             </div>
         </footer>
