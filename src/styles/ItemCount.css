@@ -7,11 +7,11 @@
 }
 
 .customCarousel > div > ol > li{
-    background-color: #fbdd11;
+    background-color: black;
 }
 
 .carousel-indicators > .active{
-    background-color: #4CBF4B;
+    background-color: gray;
 }
 
 .ItemCountContainer{

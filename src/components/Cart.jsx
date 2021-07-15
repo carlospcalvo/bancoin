@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import { useHistory } from 'react-router-dom'
-import { Card, Button, Container, Row, Col, FormInput, Breadcrumb, BreadcrumbItem } from "shards-react"
-import { Carousel } from 'react-bootstrap'
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { Card, Button, Container, Row, Col, FormInput, Breadcrumb, BreadcrumbItem } from "shards-react";
+import { Carousel } from 'react-bootstrap';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import coinFront from '../assets/coin_front.png'
-import coinBack from '../assets/coin_back.png'
-import '../styles/Cart.css'
-import ItemCount from './ItemCount'
+import coinFront from '../assets/coin_front.png';
+import coinBack from '../assets/coin_back.png';
+import '../styles/Cart.css';
+import ItemCount from './ItemCount';
 
 export const Cart = () => {
     const styles = {
@@ -39,12 +39,12 @@ export const Cart = () => {
         carouselIcons: {
             color: '#fbdd11',
         }
-    }
+    };
 
-    const nextIcon = <FontAwesomeIcon icon={faChevronRight} style={styles.carouselIcons}/>
-    const prevIcon = <FontAwesomeIcon icon={faChevronLeft} style={styles.carouselIcons}/>
+    const nextIcon = <FontAwesomeIcon icon={faChevronRight} style={styles.carouselIcons}/>;
+    const prevIcon = <FontAwesomeIcon icon={faChevronLeft} style={styles.carouselIcons}/>;
 
-    const history = useHistory()
+    const history = useHistory();
 
     return (
         <div style={styles.main}>
@@ -75,6 +75,6 @@ export const Cart = () => {
 
             </Card>        
         </div>
-    )
-}
+    );
+};
 

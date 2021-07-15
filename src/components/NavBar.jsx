@@ -39,17 +39,17 @@ export const NavBar = () => {
       <Navbar type="dark" /* theme="primary" */ expand="md" className="d-flex justify-content-between" style={styles.nav}>
         <NavbarBrand tag="span">
           <Link to="/" style={styles.brand}>
-            !banCoin
+            bananoCoin
           </Link>
         </NavbarBrand>
 
         <NavbarToggler onClick={toggleNavbar} />
 
-        <Collapse open={collapseIsOpen} navbar /* style={styles.collapse} */>
+        <Collapse open={collapseIsOpen} navbar>
           <Nav navbar className="ml-auto align-items-center">
             <NavItem>
               <Link to="/faq" style={styles.links}>
-                FAQ
+                Products
               </Link>
             </NavItem>
             <NavItem>

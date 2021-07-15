@@ -1,0 +1,17 @@
+.bannerContainer{
+	box-shadow: 70px 3px 79px 113px rgba(0,0,0,1) inset;
+	-webkit-box-shadow: 70px 3px 79px 113px rgba(0,0,0,1) inset;
+	-moz-box-shadow: 70px 3px 79px 113px rgba(0,0,0,1) inset;
+} 
+
+.bannerContainer::after{
+ box-shadow: inset 3px 3px 10px 0 #000000;
+/*  content: '';
+ display: block;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ */
+}
+

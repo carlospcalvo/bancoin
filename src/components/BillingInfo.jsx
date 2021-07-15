@@ -1,9 +1,9 @@
-import { Link, useHistory } from 'react-router-dom'
-import { Formik, Field, Form, ErrorMessage } from 'formik'
-import * as Yup from 'yup'
-import { Card, Button, Container, Row, Col, FormInput, Breadcrumb, BreadcrumbItem } from "shards-react"
-import ReactFlagsSelect from 'react-flags-select'
-import '../styles/BillingInfo.css'
+import { Link, useHistory } from 'react-router-dom';
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import { Card, Button, Container, Row, Col, FormInput, Breadcrumb, BreadcrumbItem } from "shards-react";
+import ReactFlagsSelect from 'react-flags-select';
+import '../styles/BillingInfo.css';
 
 
 export const BillingInfo = () => {
@@ -22,6 +22,7 @@ export const BillingInfo = () => {
             borderRadius: '22px',
             margin: '1rem',
             marginTop: '0',
+			marginBottom: '3rem'
         },
         breadCrumb: {
             marginTop: '1rem',
@@ -85,7 +86,7 @@ export const BillingInfo = () => {
         <div style={styles.main}>
             <Breadcrumb style={styles.breadCrumb}>
                 <BreadcrumbItem>
-                    <Link to='/cart' style={styles.breadCrumbText}>
+                    <Link to='/cart' styles={styles.breadCrumbText}>
                         Cart
                     </Link>
                 </BreadcrumbItem>
